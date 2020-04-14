@@ -1,1 +1,1 @@
-print(''.join(chr(n) for n in [101, 97, 115, 116, 101, 114, 32, 98, 117, 110, 110, 121]))
+print('This program was redacted. Check out the previous version of the code to find the answer.')
