@@ -10,6 +10,7 @@ def decrypt(message, substitution_table):
 message = ".KrsUIfRrcsQJsy8rfQMJIsdsMfsGW8WWMrfGN"
 
 # This decrypts the message once, you'll need to do this 100 times in a loop to reveal the answer
+for index in range(100):
 message = decrypt(message, REVERSE_SUBSTITUTION)
 
 print(message)
