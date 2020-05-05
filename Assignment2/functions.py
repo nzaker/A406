@@ -16,7 +16,8 @@ INPUT = [
 ("'*`  '+ -`*. ; '*.  / '*. ]gub[", 0),
 ("'*-*`  *-*`   *-*`", 6),
 ]
-
+def ReverseAndIndent (shape,number):
+    return " " * number + ''.join(reversed(shape))
 # You'll have to write the ReverseAndIndent function yourself
 # It should take two parameters: the string and the number of leading spaces
 # First your function should reverse the string, then it should add the right
