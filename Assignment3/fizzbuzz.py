@@ -1,16 +1,22 @@
-def fizz_buzz(length):
-    if (length % 15) == 0:
-        return print("FizzBuzz")
-    elif (length % 5) == 0:
-        return print("Buzz")
-    elif (length % 3) == 0:
-        return print("Fizz")
-    else:
-        return print (chr(length))
+def fizz_buzz(leng):
+    a = int (leng) + 1
+    i = 1
+    list = []
+    while i < a:
+        if (i % 15) == 0:
+            list.append ("FizzBuzz")
+        elif (i % 5) == 0:
+            list.append ("Buzz")
+        elif (i % 3) == 0:
+            list.append ("Fizz")
+        else:
+            list.append (str (i))
+        i += 1
+    return print (list[:])
+
+fizz_buzz (int (input ('Please enter number:')))
 
 
-
-fizz_buzz(len(input("please enter a name: ")))
 
 '''
 fizz_buzz takes in an integer, length
