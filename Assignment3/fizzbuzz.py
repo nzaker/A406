@@ -1,5 +1,5 @@
 def fizz_buzz(leng):
-    a = int (leng) + 1
+    a = int (leng) 
     i = 0
     list = []
     while i < a:
