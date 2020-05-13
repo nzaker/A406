@@ -1,6 +1,6 @@
 def fizz_buzz(leng):
     a = int (leng) + 1
-    i = 1
+    i = 0
     list = []
     while i < a:
         if (i % 15) == 0:
