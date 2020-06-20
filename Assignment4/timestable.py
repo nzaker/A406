@@ -1,17 +1,31 @@
 import numpy as np
+from numpy.core._multiarray_umath import ndarray
+
 
 def times_table_lists(number):
-    '''
-    This function returns a list of lists containing the times table for the positive integer input 'number'
-    It uses Python built-in operations in the standard library to calculate the times table
-    '''
-    
-    return times_table
-    
-def times_table_numpy(number):
-    '''
-    This function returns a 2D numpy array containing the times table for the positive integer input 'number'
-    It uses numpy functions to calculate the times table.
-    '''
-    
-    return times_table
+ a=int(number)
+ times_table = [[]*a] * a
+ pattern = list(range(0, a))
+ for i in range ( 0, a):
+     times_table[i] =[ m * i for m in pattern ]
+ return  times_table
+
+'''
+k=input('Please enter the Times Table\'s size: ')
+'''
+times_table_lists(7)
+
+
+
+def times_table_numpy(np_number):
+   b = int (np_number)
+   primary_row = np.arange(0,b,1)
+   row = np.reshape(primary_row, (1,b))
+   colum = np.reshape(primary_row, (b,1))
+   times_table_second = np.matmul(colum,row)
+   return times_table_second
+
+'''
+l=input('Please enter the Times Table\'s size for calculating by numpy: ')
+'''
+times_table_numpy(25)
